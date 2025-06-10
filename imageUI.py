@@ -17,7 +17,7 @@ if upload:
     st.image(image, caption='Uploaded image')
 
     image = image.resize((img_size, img_size))
-    image = np.array(image)/225
+    image = np.array(image)/255.0
     image = np.expand_dims(image, axis = 0)
 
 
